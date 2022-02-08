@@ -1,0 +1,12 @@
+<form #userForm="ngForm" (ngSubmit)="formData(userForm)">
+    <mat-form-field>
+        <mat-label >Enter Nme</mat-label>
+        <input matInput ngModel name="username" #username>
+    </mat-form-field>
+    <br/>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput ngModel name="userpassword" #userpassword>
+    </mat-form-field>
+    <button type="submit" mat-raised-button>Submit</button>
+</form>

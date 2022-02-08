@@ -1,0 +1,16 @@
+
+.navbar .menu-item{
+    padding-right:5rem;
+}
+
+.logo-icon{
+    height: 20px;
+    width: 90px;
+    padding: 0 14px 0 16px;
+    color: var(--yt-spec-wordmark-text);
+    flex:none;
+}
+
+/* .mat-toolbar button{
+    padding-top:9px;
+} */

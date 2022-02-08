@@ -1,0 +1,18 @@
+
+<mat-selection-list #defaultPageListItem  [multiple]="false">
+    <mat-list-option *ngFor="let defaultItem of defaultPageList" [value]="defaultItem" (click)="itemClicked(defaultItem)">
+        <mat-icon  mat-list-icon>{{defaultItem.symbolName}}</mat-icon>
+        <div mat-line>{{defaultItem.text}}</div>
+    </mat-list-option>
+</mat-selection-list>
+<mat-divider></mat-divider>
+
+<mat-selection-list #userPageListItem  [multiple]="false">
+    <mat-list-option *ngFor="let defaultItem of userSpecificList" [value]="defaultItem" (click)="clicktonavigate(defaultItem.symbolName)">
+        <mat-icon mat-list-icon>{{defaultItem.symbolName}}</mat-icon>
+        <div mat-line>{{defaultItem.text}}</div>
+    </mat-list-option>
+</mat-selection-list>
+
+
+
