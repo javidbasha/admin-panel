@@ -14,7 +14,7 @@
         <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
           </button>
-        <mat-error i18n *ngIf="loginForm.get('password')?.invalid">Plese enter password</mat-error>
+        <mat-error i18n *ngIf="loginForm.get('password')?.invalid">Plese enter valid password</mat-error>
     </mat-form-field>
     <button i18n class="form-item" mat-raised-button color="primary" type="submit">Login</button>
 </form>
