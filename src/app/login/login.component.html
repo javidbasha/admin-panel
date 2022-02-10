@@ -15,6 +15,7 @@
             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
           </button>
         <mat-error i18n *ngIf="loginForm.get('password')?.invalid">Plese enter valid password</mat-error>
+        <mat-error i18n *ngIf="loginForm.get('password')?.invalid">Plese enter March10 password</mat-error>
     </mat-form-field>
     <button i18n class="form-item" mat-raised-button color="primary" type="submit">Login</button>
 </form>
