@@ -20,6 +20,14 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HomeComponent } from './home/home.component';
 import { TemplatedrivenformComponent } from './templatedrivenform/templatedrivenform.component';
+import { ProjectionComponent } from './projection/projection.component';
+import { ChprojComponent } from './chproj/chproj.component';
+import { HideAfterDirective } from './hide-after.directive';
+import { ConfirmService } from './confirm.service';
+import { CheckserviceService } from './checkservice.service';
+import { REPORTER } from './reporter.token';
+import { BrowserService } from './browser.service';
+import { CounttimeService } from './counttime.service';
 
 
 
@@ -32,7 +40,10 @@ import { TemplatedrivenformComponent } from './templatedrivenform/templatedriven
     LoginComponent,
     PostsComponent,
     HomeComponent,
-    TemplatedrivenformComponent  
+    TemplatedrivenformComponent,
+    ProjectionComponent,
+    ChprojComponent,
+    HideAfterDirective  
   ],
   
   imports: [
@@ -58,7 +69,12 @@ import { TemplatedrivenformComponent } from './templatedrivenform/templatedriven
       provide:HTTP_INTERCEPTORS,
       useClass:FirebaseInterceptor,
       multi:true
-    }
+    },
+    ConfirmService,
+    CheckserviceService,
+    {provide: REPORTER,useExisting:BrowserService,multi:true},
+    {provide: REPORTER,useExisting:CounttimeService,multi:true}
+    
   ],
   bootstrap: [AppComponent]
 })

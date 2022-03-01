@@ -1,0 +1,11 @@
+<p #textref>
+    Name: <input type="text">
+</p>
+
+<ng-template #data>
+    <ng-continer [ngTemplateOutlet]="datepass"></ng-continer>
+</ng-template>
+<app-chproj [datapro]="data">
+    <p class="para">inside para content projection</p>
+
+</app-chproj>

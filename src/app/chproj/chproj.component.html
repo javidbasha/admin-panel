@@ -1,0 +1,12 @@
+<h1>Projection component</h1>
+<div class="body" >
+    <ng-content selector=".para"></ng-content>
+    <div *ngIf="projectdata">
+        <ng-container [ngTemplateOutlet]="projectdata"></ng-container>
+    </div>
+</div>
+
+<div *HideAfter="projectdata">
+    Hide this content after 5 sec
+</div>
+<button>submit</button>

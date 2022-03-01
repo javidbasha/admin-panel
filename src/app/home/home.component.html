@@ -28,6 +28,23 @@
             <button mat-button>SHARE</button>
           </mat-card-actions>
         </mat-card>
-
+      <ng-template #todayDate>
+          Today date is : {{ dateToday }} 
+      </ng-template>
       </cdk-virtual-scroll-viewport>
+
+      <app-projection [datepass]="todayDate">
+
+      </app-projection>  
+      <div>
+      <form [formGroup]="newForm" (ngSubmit)="getFormDetails()">
+        <label id="clientname">Fullname</label>
+        <input type="text" name="clientname" formControlName="username" />
+
+        <label id="clientpassword">Password</label>
+        <input type="password" name="clientpassword" formControlName="userpassword" />
+
+        <button type="submit"> Submit</button>
+      </form>
+    </div>
 </div>
