@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HistoryComponent } from './history/history.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SearchresultsComponent } from './search/searchresults/searchresults.component';
@@ -14,8 +15,8 @@ const routes: Routes = [
     {path:'login',component:LoginComponent},
     {path:'posts/:id',canActivate:[AuthGuard],component:PostsComponent},
     {path:'search',component:SearchresultsComponent },
-    {path:'slideshow',component:TemplatedrivenformComponent}
-    
+    {path:'slideshow',component:TemplatedrivenformComponent},
+    {path:'history',component:HistoryComponent}
 ];
 
 @NgModule({

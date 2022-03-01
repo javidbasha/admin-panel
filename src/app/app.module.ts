@@ -28,6 +28,9 @@ import { CheckserviceService } from './checkservice.service';
 import { REPORTER } from './reporter.token';
 import { BrowserService } from './browser.service';
 import { CounttimeService } from './counttime.service';
+import { HistoryComponent } from './history/history.component';
+import { ProxyComponent } from './history/proxy/proxy.component';
+import { DateComponent } from './history/date/date.component';
 
 
 
@@ -43,7 +46,10 @@ import { CounttimeService } from './counttime.service';
     TemplatedrivenformComponent,
     ProjectionComponent,
     ChprojComponent,
-    HideAfterDirective  
+    HideAfterDirective,
+    HistoryComponent,
+    ProxyComponent,
+    DateComponent  
   ],
   
   imports: [

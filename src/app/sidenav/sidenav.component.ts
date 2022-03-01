@@ -30,7 +30,9 @@ export class SidenavComponent implements OnInit {
   ngOnInit(): void {
   }
   clicktonavigate(selectedItem:any){
-    if(selectedItem=="slideshow") this.route.navigate([selectedItem])
+    if(selectedItem=="slideshow") this.route.navigate([selectedItem]);
+
+    if(selectedItem=="history") this.route.navigate([selectedItem]);
     
   }
 }

@@ -1,0 +1,12 @@
+<div *ngFor="let history of historyData">
+    <app-proxy >
+        <ng-template #proxy>
+            {{history.proxy}}
+        </ng-template>
+    </app-proxy>   
+    <app-date>
+        <ng-template #date>
+            {{history.date}}
+        </ng-template>
+    </app-date>
+</div>
