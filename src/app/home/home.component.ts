@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit,AfterViewInit {
   newForm:FormGroup;
   constructor(
     private httpServ:SearchapiService,
-    private form:FormBuilder
+    private form:FormBuilder,
   // private ckServ:CheckserviceService,
     //@SkipSelf() private ckServ1:CheckserviceService
   ) { 
